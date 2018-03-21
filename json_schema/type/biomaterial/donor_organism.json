@@ -46,11 +46,6 @@
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/mus_musculus_specific"
         },
-        "death": {
-            "description": "Information about conditions of death of an organism.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/death"
-        },
         "medical_history": {
             "description": "Information about the medical history of an organism.",
             "type": "object",
@@ -70,7 +65,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Organism age"
-        }, 
+        },
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
             "type": "object",
@@ -83,7 +78,7 @@
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/development_stage_ontology",
             "user_friendly": "Development stage"
-        }, 
+        },
         "disease": {
             "description": "Short description of disease status of the organism.",
             "type": "array",
@@ -91,14 +86,6 @@
                 "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology"
 	        },
             "user_friendly": "Disease"
-        },
-        "familial_relationship": {
-            "description": "Information about other organisms related to this organism.",
-            "type": "array",
-            "items": {
-                "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/familial_relationship"
-                },
-            "user_friendly": "Familial relationship"
         },
         "gestational_age": {
             "description": "Gestational age in gestational_age_units. Measured since fertilization.",
@@ -128,14 +115,14 @@
             "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
             "type": "boolean",
             "user_friendly": "Is living?"
-        }, 
+        },
         "biological_sex": {
             "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
             "type": "string",
             "enum": [
-                "female", 
-                "male", 
-                "mixed", 
+                "female",
+                "male",
+                "mixed",
                 "unknown"
             ],
             "user_friendly": "Biological sex"

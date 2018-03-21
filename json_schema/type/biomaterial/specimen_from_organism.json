@@ -67,22 +67,6 @@
                 "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology"
 	        },
             "user_friendly": "Disease"
-        },
-        "state_of_specimen": {
-            "description": "State of the specimen at the time of collection/removal.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/state_of_specimen"
-        },
-        "preservation_storage": {
-            "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/preservation_storage"
-        },
-        "collection_time": {
-            "description": "When the biomaterial was collected, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
-            "type": "string",
-            "format": "date-time",
-            "user_friendly": "Time of collection"
         }
     }
 }
